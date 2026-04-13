@@ -8,7 +8,7 @@ import Day1InClass from "./in-class/day-1-basics/Day1";
 import Day1Assignment from "./assignments/day-1/Assignment";
 // import Day2Assignment from "./assignments/day-2/Assignment";
 
-import Day1 from "./solutions/day-1";
+// import Day1 from "./solutions/day-1";
 
 const App = () => {
   return (
