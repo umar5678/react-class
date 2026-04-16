@@ -14,7 +14,7 @@ const Counter = () => {
       <button
         className="p-3 bg-blue-700 text-white"
         onClick={() => setCount(count + 1)}
-      >
+        >
         Increment
       </button>
     </div>
@@ -22,3 +22,10 @@ const Counter = () => {
 };
 
 export default Counter;
+
+
+// for decrement : 
+// onClick={() => setCount( count - 1 )}
+
+// for reset , create button
+// onClick={() => setCount( 0 )}
