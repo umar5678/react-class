@@ -1,0 +1,70 @@
+import { lazy } from "react";
+
+const days = [
+  {
+    day: 1,
+    title: "React Basics",
+    topics: ["JSX", "Components", "Props", "Project Setup"],
+    date: "April 12 , 2026",
+    duration: "2 hours",
+    status: "completed",
+    description: "Introduction to React fundamentals and JSX syntax",
+    inClass: lazy(() => import("../in-class/day-1")),
+    assignment: {
+      title: "Personal Portfolio Page",
+      topic: "JSX & Basic Components",
+      dueDate: "April 12, 2026",
+      points: 100,
+      difficulty: "Easy",
+      status: "submitted",
+      description: "Build your first React component using JSX",
+      component: lazy(() => import("../assignments/day-1")),
+    },
+    solution: lazy(() => import("../solutions/day-1")),
+  },
+  {
+    day: 2,
+    title: "Props & Reusable Components",
+    topics: ["Props", "Conditional Rendering", "Variants", "Component Composition"],
+    date: "April 14, 2026",
+    duration: "2.5 hours",
+    status: "completed",
+    description: "Building reusable components with props and conditional logic",
+    inClass: lazy(() => import("../in-class/day-2")),
+    assignment: {
+      title: "Student Profile Cards",
+      topic: "Props & Component Reusability",
+      dueDate: "Apr 14, 2026",
+      points: 100,
+      difficulty: "Easy",
+      status: "submitted",
+      description: "Create reusable profile card components with different variants",
+      component: lazy(() => import("../assignments/day-2")),
+    },
+    solution: lazy(() => import("../solutions/day-2")),
+  },
+  {
+    day: 3,
+    title: "State & Hooks",
+    topics: ["useState", "Event Handling", "Forms", "Controlled Components"],
+    date: "April 16, 2026",
+    duration: "2 hours",
+    status: "in-progress",
+    description: "Introduction to React state management and event handling",
+    inClass: lazy(() => import("../in-class/day-3")),
+    assignment: {
+      title: "Todo List App",
+      topic: "State Management & Events",
+      dueDate: "April 16, 2026",
+      points: 150,
+      difficulty: "Medium",
+      status: "pending",
+      description: "Build an interactive todo list with add, delete, and toggle features",
+      component: null,
+    },
+    solution: null,
+  },
+
+];
+
+export default days;
