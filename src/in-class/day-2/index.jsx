@@ -6,6 +6,9 @@ import ProductCard from "./components/ProductCard";
 import UserProfileCard from "./components/UserProfileCard";
 
 const Day2 = () => {
+
+
+
   return (
     <div className="max-w-7xl mx-auto ">
       <h1 className="font-bold text-3xl ">Props and Component reuseability </h1>
@@ -70,11 +73,13 @@ const Day2 = () => {
         description="simple description for now and nothing"
         quantity={20}
       />
+
       <ProductCard
         name={"Apple Watch"}
         description="simple description for now and nothing"
         quantity={2}
       />
+
       <ProductCard
         name={"Apple Watch"}
         description="simple description for now and nothing"
@@ -85,6 +90,7 @@ const Day2 = () => {
         description="simple description for now and nothing"
         quantity={9}
       />
+
     </div>
   );
 };

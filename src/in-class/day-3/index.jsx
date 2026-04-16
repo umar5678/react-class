@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import UserProfileCard from "./components/UserProfileCard";
+import { users } from "./data/users";
+import Counter from "./components/Counter";
 
 const Day3 = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-6 py-4">
+        <div className="max-w-7xl mx-auto px-6 py-4">
           <Link
             to="/"
             className="inline-flex items-center text-sm text-blue-600 hover:text-blue-700 mb-2"
@@ -40,22 +43,25 @@ const Day3 = () => {
         </div>
       </header>
 
-      <div className="max-w-5xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <section className="mb-8">
           <h2 className="text-lg font-semibold text-slate-900 mb-4">
             Topics Covered
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {["useState", "Event Handling", "Forms", "Controlled Components"].map(
-              (topic) => (
-                <div
-                  key={topic}
-                  className="bg-white border border-slate-200 rounded-lg px-4 py-3 text-center"
-                >
-                  <p className="text-sm font-medium text-slate-700">{topic}</p>
-                </div>
-              )
-            )}
+            {[
+              "useState",
+              "Event Handling",
+              "Forms",
+              "Controlled Components",
+            ].map((topic) => (
+              <div
+                key={topic}
+                className="bg-white border border-slate-200 rounded-lg px-4 py-3 text-center"
+              >
+                <p className="text-sm font-medium text-slate-700">{topic}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -63,9 +69,33 @@ const Day3 = () => {
           <h2 className="text-lg font-semibold text-slate-900 mb-4">
             Lesson Content
           </h2>
-          <p className="text-slate-600">
-            In-class demos and examples for useState will go here.
+          <p className="text-slate-900">
+            In-class demos and examples for useState.
           </p>
+          <p className="text-slate-900">
+            recap for props and Compoment reusability.
+          </p>
+          <div className="flex flex-wrap justify-between">
+            {users.map((user) => (
+              <div key={user.id}>
+                <UserProfileCard
+                  name={user.name}
+                  role={user.role}
+                  intro={user.intro}
+                  image={user.image}
+                  linkedin={user.socialLinks.linkedin}
+                  github={user.socialLinks.github}
+                  instagram={user.socialLinks.instagram}
+                />
+              </div>
+            ))}
+          </div>
+
+          <br />
+
+          <br />
+
+          <Counter />
         </section>
       </div>
     </div>

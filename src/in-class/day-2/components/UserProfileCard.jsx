@@ -2,7 +2,9 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-const UserProfileCard = () => {
+const UserProfileCard = ({
+  
+}) => {
   return (
     // outer div , background
     <div className="min-h-screen bg-gray-200 flex justify-center items-center">
