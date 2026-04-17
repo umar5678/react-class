@@ -20,7 +20,7 @@ const days = [
       description: "Build your first React component using JSX",
       component: lazy(() => import("../assignments/day-1")),
     },
-    solution: lazy(() => import("../solutions/day-1")),
+    // solution: lazy(() => import("../solutions/day-1")),
   },
   {
     day: 2,
@@ -41,7 +41,7 @@ const days = [
       description: "Create reusable profile card components with different variants",
       component: lazy(() => import("../assignments/day-2")),
     },
-    solution: lazy(() => import("../solutions/day-2")),
+    // solution: lazy(() => import("../solutions/day-2")),
   },
   {
     day: 3,
@@ -62,7 +62,7 @@ const days = [
       description: "Build an interactive todo list with add, delete, and toggle features",
       component: null,
     },
-    solution: null,
+    // solution: null,
   },
 
 ];

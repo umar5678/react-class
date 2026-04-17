@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import UserProfileCard from "./components/UserProfileCard";
 import { users } from "./data/users";
 import Counter from "./components/Counter";
+import RegisterForm from "./components/RegisterForm";
+import List from "./components/List";
 
 const Day3 = () => {
   return (
@@ -73,9 +75,9 @@ const Day3 = () => {
             In-class demos and examples for useState.
           </p>
           <p className="text-slate-900">
-            recap for props and Compoment reusability.
+            recap for props and Compoment reusability Complete.
           </p>
-          <div className="flex flex-wrap justify-between">
+          {/* <div className="flex flex-wrap justify-between">
             {users.map((user) => (
               <div key={user.id}>
                 <UserProfileCard
@@ -89,13 +91,26 @@ const Day3 = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
 
           <br />
 
           <br />
 
           <Counter />
+
+          <br />
+          <br />
+
+          <div className="">
+  <h1 className="text-3xl font-semibold">Registration Form</h1>
+          <RegisterForm />  
+          </div>
+
+           <div className="">
+  <h1 className="text-3xl font-semibold">Item list</h1>
+          <List />  
+          </div>
         </section>
       </div>
     </div>
